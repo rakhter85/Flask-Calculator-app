@@ -21,5 +21,5 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Build and push the Docker image
       run: |
-        docker build -t rok2020/flask-calculator-ci-pipeline:v1 /cloudspace
+        docker build -t rok2020/flask-calculator-ci-pipeline:v1 .
         docker push rok2020/flask-calculator-ci-pipeline:v1
