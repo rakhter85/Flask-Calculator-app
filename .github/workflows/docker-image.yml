@@ -22,4 +22,5 @@ jobs:
     - name: Build and push the Docker image
       run: |
         docker build -t flask-calculator-ci-pipeline cloudspace/
+        docker tag flask-calculator-ci-pipeline rok2020/flask-calculator-ci-pipeline:v1
         docker push rok2020/flask-calculator-ci-pipeline:v1
